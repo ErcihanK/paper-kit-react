@@ -1,5 +1,4 @@
 /*!
-
 =========================================================
 * Paper Kit React - v1.3.2
 =========================================================
@@ -14,23 +13,23 @@
 =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
 */
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Navigate, Routes } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'assets/scss/paper-kit.scss';
+import 'assets/demo/demo.css';
+import Index from './views/Index.js';
+import NucleoIcons from './views/NucleoIcons.js';
+import LandingPage from './views/examples/LandingPage.js';
+import ProfilePage from './views/examples/ProfilePage.js';
+import RegisterPage from './views/examples/RegisterPage.js';
 
 // styles
 import "bootstrap/scss/bootstrap.scss";
 import "assets/scss/paper-kit.scss?v=1.3.0";
 import "assets/demo/demo.css?v=1.3.0";
-// pages
-import Index from "views/Index.js";
-import NucleoIcons from "views/NucleoIcons.js";
-import LandingPage from "views/examples/LandingPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
-import RegisterPage from "views/examples/RegisterPage.js";
-// others
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -46,3 +45,4 @@ root.render(
     </Routes>
   </BrowserRouter>
 );
+
